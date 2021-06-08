@@ -100,6 +100,54 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 box">
+          <div class="card text-center" style="width: auto">
+            <div class="card-body">
+              <h5 class="card-title">Integração Pagar.me API</h5>
+            </div>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="iniciarIntegracaoPagarmeApi()"
+              >
+                Iniciar microsserviço
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 box">
+          <div class="card text-center" style="width: auto">
+            <div class="card-body">
+              <h5 class="card-title">B2VN Auth API</h5>
+            </div>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="iniciarB2VNAuthApi()"
+              >
+                Iniciar microsserviço
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 box">
+          <div class="card text-center" style="width: auto">
+            <div class="card-body">
+              <h5 class="card-title">B2VN Radar API</h5>
+            </div>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="iniciarB2VNRadarApi()"
+              >
+                Iniciar microsserviço
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 box"></div>
       </div>
     </div>
@@ -117,6 +165,15 @@
     }
     function iniciarNutricaoEsportivaApi() {
       axios.get("https://nutricao-esportiva-app.herokuapp.com/");
+    }
+    function iniciarIntegracaoPagarmeApi() {
+      axios.get("https://integracaopagarme-api.herokuapp.com/");
+    }
+    function iniciarB2VNAuthApi() {
+      axios.get("https://b2vn-auth-api.herokuapp.com/");
+    }
+    function iniciarB2VNRadarApi() {
+      axios.get("https://b2vn-radar-api.herokuapp.com/");
     }
   </script>
 </html>
